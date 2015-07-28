@@ -1,0 +1,446 @@
+body {
+	background: #111;
+	color: #ccc;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+h1, h2 {
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+}
+
+h1 {
+	color: #f45c0d;
+	font-size: 40px;
+	line-height: 38px;
+	margin-bottom: .5em;
+	font-weight: 300;
+}
+
+h2 {
+	color: rgba(255, 255, 255, .75);
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-variant: normal;
+}
+
+h3 {
+	color: rgba(255, 255, 255, 1);
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 1em;
+	margin-bottom: 8px;
+}
+
+h4 {
+	font-weight: 400;
+	margin: 32px 0 4px 0;
+}
+
+h4 a {
+	color: #F45D0E;
+}
+
+h4 a:hover {
+	color: #fff;
+}
+
+p {
+	line-height: 1.5em;
+	margin-bottom: 1em;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #F45D0E;
+}
+
+#intro {
+	color: rgba(255, 255, 255, .75);
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-variant: normal;
+}
+
+
+h1#phoboslab-logo {
+	color: #fff;
+	margin-top: 6em;
+	padding: 0;
+	height: 60px;
+	margin-bottom: 30px;
+}
+
+canvas#bg {
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+div#content {
+	width: 100%;
+	margin: 1em 0 6em 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+
+div#head {
+	position: relative;
+	min-width: 320px;
+	max-width: 1024px;
+	margin: 0 auto;
+	text-align: center;	
+}
+
+div.section {
+	min-width: 320px;
+	max-width: 1024px;
+	margin: 0 auto;
+
+	padding-top: 64px; 
+}
+
+div.section-head {
+	margin-bottom: 6em;
+}
+
+div#foot p {
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 32px;
+}
+
+
+/* ------------------------------------------------------------------------- 
+Columns */
+
+div.columns {
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+div.columns-1 { width: 320px; }
+div.columns-2 { width: 640px; }
+div.columns-3 { width: 960px; }
+
+div.column-box {
+	text-align: left;
+	width: 288px;
+	float: left;
+	padding: 0 16px 64px 16px;
+}
+
+div.columns-1 div.column-box,
+div.columns-2 div.column-box:nth-child(2n+1),
+div.columns-3 div.column-box:nth-child(3n+1) {
+	clear: left;
+}
+
+div.column-3-2, 
+div.column-3-1-2 
+{
+	float: left;
+	padding: 0 20px 32px 20px;
+	width: 280px;
+}
+
+div.columns-2 div.column-3-2, 
+div.columns-3 div.column-3-2,
+div.columns-2 div.column-3-1-2 {
+	width: 600px;
+}
+
+div.columns-1 h1#phoboslab-logo {
+	margin-top: 3em;
+	height: 60px;
+}
+
+
+/* ------------------------------------------------------------------------- 
+Hamburger Menu for mobile */
+
+div#menu {
+	display: none;
+}
+
+a#menu-button {
+	opacity: 0.7;
+	position: fixed;
+	top: 12px;
+	right: 18px;
+	z-index: 12;
+	width: 20px;
+	height: 11px;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	background-repeat: no-repeat;
+}
+
+a#menu-button span {
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+
+	left: 0;
+	width: 100%;
+	height: 3px;
+	margin-top: -1.5px; /* half height */
+}
+
+a.menu-button:hover {
+	border-top: 0.375em double rgba(244, 93, 14, 1);
+	border-bottom: 2px solid rgba(244, 93, 14, 1);
+}
+
+div#menu-items {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,.8);
+	width: 100%;
+	z-index: 9;
+	border-bottom: 1px solid rgba(0,0,0,1);
+}
+
+div#menu-items a {
+	display: block;
+	padding: 8px 8px 8px 16px;
+	background: rgba(255,255,255,.05);
+	border-bottom: 1px solid rgba(255,255,255,.15);
+	text-transform: uppercase;
+}
+
+
+
+/* ------------------------------------------------------------------------- 
+Scroll Tip and Arrow */
+
+a.scroll-tip {
+	display: block;
+	position: fixed;
+	right: 20px;
+	height: 16px;
+	top: 0;
+	z-index: 10;
+	font-size: 12px;
+	background: rgba(0, 0, 0, .45);
+	color: rgba(255, 255, 255, .7);
+	padding: 5px 5px;
+	border-radius: 3px;
+	border-bottom-right-radius: 0; 
+	border-top-right-radius: 0;
+	font-weight: 400;
+}
+
+a.scroll-tip.active:hover, a.scroll-tip:hover {
+	color: rgba(255, 255, 255, .85);
+	background: rgba(244, 93, 14, 1);
+}
+
+a.scroll-tip.active {
+	color: rgba(255, 255, 255, .9);
+}
+
+a.scroll-tip:after {
+	content: " ";
+	display: block;
+	position: absolute;
+	right: -13px;
+	height: 0;
+	top: 0;
+	border-top: 13px solid transparent;
+	border-left: 13px solid rgba(0, 0, 0, .45);
+	border-bottom: 13px solid transparent;
+}
+
+a.scroll-tip:hover:after {
+	border-left: 13px solid rgba(244, 93, 14, 1);
+}
+
+
+
+/* ------------------------------------------------------------------------- 
+Games */
+
+div.game p {
+	font-size: 14px;
+	color: rgba(255, 255, 255, .8);
+}
+
+div.game h3 {
+}
+
+	
+div.game p.available {
+	margin-top: 2em;
+	margin-bottom: 0em;
+}
+
+img.game-screenshot {
+	margin-left: -4px;
+	border-radius: 8px;
+	border: 4px solid rgba(0, 0, 0, .15);
+	width: 280px;
+}
+
+span.year {
+	color: rgba(255, 255, 255, .3);
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+a.button {
+	font-size: 12px;
+	background: rgba(255, 255, 255, .1);
+	color: rgba(255, 255, 255, .7);
+	padding: 3px 6px;
+	border-radius: 3px;
+	font-weight: 400;
+}
+
+a.button:hover {
+	color: rgba(255, 255, 255, .85);
+	background: rgba(244, 93, 14, 1);
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+/* ------------------------------------------------------------------------- 
+Projects */
+
+div.project {
+	padding: 0 16px 64px 16px;
+}
+
+div.project:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+img.project-screenshot {
+	margin-left: -4px;
+	border-radius: 8px;
+	border: 4px solid rgba(0, 0, 0, .15);
+}
+
+div.columns-3 img.project-screenshot {
+	float: left;
+	width: 600px;
+	margin-right: 32px;
+}
+
+div.columns-2 img.project-screenshot {
+	width: 600px;
+	margin-bottom: 16px;
+}
+
+div.columns-1 img.project-screenshot {
+	width: 280px;
+}
+
+
+/* -------- Blog */
+
+blockquote {
+	position:relative;
+	margin: 48px 0 64px 0;
+	font-size: 14px;
+	line-height: 1.5em;
+	color: rgba(255,255,255,.85);
+	font-style: italic;
+	font-weight: 300;
+	text-indent: 24px;
+}
+
+blockquote:before {
+	display: block;
+	content: "\201C";
+	font-size: 72px;
+	position: absolute;
+	left: -40px;
+	top: 0px;
+	color: rgba(255,255,255,0.5);
+}
+
+cite {
+	margin-top: 4px;
+	font-style: normal;
+	text-indent: 0;
+	display: block;
+}
+
+cite:before {
+	content: "\2014 \2009";
+}
+
+a.author {
+	font-weight: 400;
+	text-transform: uppercase;
+	color: rgba(244, 93, 14, 1);
+}
+
+a.author:hover {
+	color: #fff;
+}
+
+p.abstract {
+	margin: 4px 0 8px 8px;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+div.blog-articles {
+	/*margin-bottom: 64px;*/
+	margin: 48px 0 64px 0;
+}
+
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+	div.columns-2 {
+    width: 0px;
+	}
+}
+
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) {
+	div.columns-2 {
+    width: 0px;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+	div.columns-2 {
+    width: 0px;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	div.columns-2 {
+    width: 0px;
+	}
+}
