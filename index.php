@@ -20,7 +20,7 @@
     </h2>
   </div>
 
-  <a class="scroll-tip" href="mailto:contact@recursiv" style="top: inherit; bottom: 22px;">contact@recursiv.co</a>
+  <a class="scroll-tip" href="mailto:contact@recursiv.co" style="top: inherit; bottom: 22px;">contact@recursiv.co</a>
 
   <script type="text/javascript" src="assets/js/jquery-1.9.1.min.js"></script>
   <script type="text/javascript" src="assets/js/page.js"></script>
