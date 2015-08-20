@@ -13,7 +13,7 @@
 
   <div id="content">
     <div id="head" class="columns columns-2">
-      <h1 id="phoboslab-logo">&Lambda;|Recursiv</h1>
+      <img id="phoboslab-logo" src="/assets/img/recursiv-logo.png">
     </div>
     
     <h2 id="intro">
